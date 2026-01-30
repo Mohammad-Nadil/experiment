@@ -1,0 +1,28 @@
+.svg {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.svg path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s ease-in-out forwards ;
+  filter: drop-shadow(0 0 8px #fff); 
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    fill: #fff;
+     filter: drop-shadow(0 0 1px #fff); 
+    stroke-dashoffset: 0;
+  }
+}

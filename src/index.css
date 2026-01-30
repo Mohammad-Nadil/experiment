@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+.autoRotate {
+  animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun {
+  from {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
+}
+
+.cocktail-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.mask {
+  /* mask-image apply to whole page */
+  mask-image: url("/mask1.gif");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  -webkit-mask-image: url("/mask1.gif");
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+@utility text-gradient {
+  background: linear-gradient(to bottom, #ffffff, #898989);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@theme {
+  --font-negra: "ModernNegra", sans-serif;
+  --font-monaSans: "Mona Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "ModernNegra";
+  src: url("/cocktail/fonts/ModernNegraDemo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@utility radial-gradient {
+  background: radial-gradient(
+    circle at center,
+    #434343 0%,
+    #000 50%,
+    transparent 100%
+  );
+}
+
+video {
+  will-change: transform;
+  transform: translateZ(0);
+}
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+}
