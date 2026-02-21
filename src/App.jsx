@@ -7,6 +7,7 @@ import Mask from "./components/Mask";
 import MouseTracker from "./components/MouseTracker";
 import SvgAnimation from "./components/SvgAnimation";
 import Robot from "./components/Robot";
+import { NavLink } from "react-router";
 
 const App = () => {
   return (
@@ -38,6 +39,38 @@ const App = () => {
         </div> */}
         <div className="mouse-tracker " id="mouse-tracker">
           <MouseTracker />
+        </div>
+        <div className="flex items-center justify-center mx-auto gap-4">
+          <NavLink
+            to="/"
+            className="text-2xl md:text-3xl font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-linear-to-r from-lime-400 via-green-500 to-blue-500 animate-text"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/running"
+            className="text-2xl md:text-3xl font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-linear-to-r from-lime-400 via-green-500 to-blue-500 animate-text"
+          >
+            running
+          </NavLink>
+          <NavLink
+            to="/parallax"
+            className="text-2xl md:text-3xl font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-linear-to-r from-lime-400 via-green-500 to-blue-500 animate-text"
+          >
+            parallax
+          </NavLink>
+          <NavLink
+            to="/stackcard"
+            className="text-2xl md:text-3xl font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-linear-to-r from-lime-400 via-green-500 to-blue-500 animate-text"
+          >
+            stackcard
+          </NavLink>
+          <NavLink
+            to="/mask"
+            className="text-2xl md:text-3xl font-extrabold tracking-wider text-center text-transparent bg-clip-text bg-linear-to-r from-lime-400 via-green-500 to-blue-500 animate-text"
+          >
+            mask
+          </NavLink>
         </div>
       </div>
     </div>
