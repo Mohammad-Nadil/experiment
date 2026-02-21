@@ -9,6 +9,7 @@ import gsap from "gsap";
 import StackCard from "./page/StackCard.jsx";
 import SmoothParallax from "./page/SmoothParallax.jsx";
 import MountainParallax from "./page/MountainParallax.jsx";
+import Mask from "./page/Mask.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, Physics2DPlugin);
 
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/running" element={<MountainParallax />} />
       <Route path="/parallax" element={<SmoothParallax />} />
       <Route path="/stackcard" element={<StackCard />} />
+      <Route path="/mask" element={<Mask />} />
     </Routes>
   </BrowserRouter>
 );

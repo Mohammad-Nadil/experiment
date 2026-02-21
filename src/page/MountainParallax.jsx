@@ -27,13 +27,11 @@ const MountainParallax = () => {
 
     layers.forEach((item, index) => {
       gsap.to(`#${item}`, {
-        yPercent: -index * 15,
-        ease: "none",
+        y: -index * 15,
         scrollTrigger: {
           trigger: ".scroller",
-          start: "top top",
-          end: "bottom 250%",
-          scrub: 0.8,
+          start: "center top",
+          end: "bottom top",
           markers: true,
         },
       });
