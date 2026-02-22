@@ -5,6 +5,7 @@ import img3 from "/mask/mask3.avif";
 import img4 from "/mask/mask4.avif";
 import img5 from "/mask/mask5.avif";
 import img6 from "/mask/mask6.avif";
+import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
